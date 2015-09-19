@@ -56,16 +56,3 @@ class Db {
         return $result;
     }
 }
-
-$db = new Db();
-$table = 'users';
-$data = array(
-    'username' => 'hjg',
-    'email' => 'thisistheemail',
-    'password' => '16221992'
-);
-
-$db->insert($data);
-echo "<pre>";
-print_r($db->get($table));
-echo "</pre>";
